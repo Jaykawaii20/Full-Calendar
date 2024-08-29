@@ -1,0 +1,18 @@
+<div class="modal-header">
+    <h4 class="modal-title">Details</h4>
+  </div>
+  <div class="modal-body">
+    <div *ngIf="event">
+      <p><strong>Event Title:</strong> {{ event.title }}</p>
+      <p><strong>Event Start:</strong> {{ event.start }}</p>
+      <p><strong>Event End:</strong> {{ event.end }}</p>
+      
+    </div>
+    <div *ngIf="!event">
+      <p><strong>Date:</strong> {{ date }}</p>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="close()">Close</button>
+  </div>
+  
